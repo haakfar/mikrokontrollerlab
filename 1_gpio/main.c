@@ -47,12 +47,12 @@ int main(){
 		 * turn on LED matrix if it is. */
 		 if (ubit_button_press_a()){
 
-			GPIO->OUTSET = (1 << 17);
+			GPIO->OUTSET = (1 << 18);
 		 }
 
 		 if (!(GPIO->IN & (1 << 13))){
 
-			GPIO->OUTCLR = (1 << 17);
+			GPIO->OUTCLR = (1 << 18);
 		 }
 
 		/* Check if button 2 is pressed;
